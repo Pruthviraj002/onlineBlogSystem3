@@ -9,6 +9,7 @@ import Dashboard from './Pages/Dashboard'
 import Signin from './Pages/Signin'
 import Signup from './Pages/Signup'
 import Project from './Pages/Project'
+import Header from './components/Header'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -16,6 +17,7 @@ function App() {
   return (
     <>
       <BrowserRouter>
+        <Header />
         <Routes>
           <Route path='/' element={<Home />} />
           <Route path='/about' element={<About />} />
